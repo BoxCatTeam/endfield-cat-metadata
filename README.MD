@@ -32,7 +32,7 @@
 ```
 
 - 顶层键：`Character` / `Weapon` 等分类（也是图片所在目录名）。
-- `itemid`：唯一 ID；对应图片文件名（`<分类>/<itemid>.png`）。
+- `itemid`：唯一 ID；对应图片文件名（`<分类>/Icon/<itemid>.png`）。
 - `name`：显示名。
 - `rarity`：稀有度（整数）。
 
@@ -41,6 +41,7 @@
 - 仅收录并提交以 `chr_` / `wpn_` 命名的资源文件。
 - 图片文件名必须与 `itemid` 完全一致：`Character/chr_XXXX_xxx.png`、`Weapon/wpn_XXXX_xxx.png`。
 - `metadata.json` 中的每个 `itemid` 都应存在对应的 PNG 文件；反之亦然。
+- 角色/武器缩略图统一放在子目录：`Character/Icon/`、`Weapon/Icon/`。
 
 ## 快速校验（PowerShell）
 
@@ -78,20 +79,17 @@ $extra
 
 ## manifest.json
 
-- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。同时会将 `metadata.json` 本身作为一条 `type=Metadata` 的记录加入 `entries`，便于客户端校验。
+- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `type`、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。同时会将 `metadata.json` 本身作为一条 `type=Metadata` 的记录加入 `entries`，便于客户端校验。
 - 生成命令（PowerShell）：
 
 ```powershell
 $data = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
 $entries = foreach($category in $data.PSObject.Properties){
   foreach($i in $category.Value){
-    $path = Join-Path $category.Name ($i.itemid + '.png')
+    $path = Join-Path $category.Name (Join-Path 'Icon' ($i.itemid + '.png'))
     $file = Get-Item $path
     [pscustomobject]@{
       type     = $category.Name
-      itemid   = $i.itemid
-      name     = $i.name
-      rarity   = $i.rarity
       path     = $path
       size     = $file.Length
       mtime    = $file.LastWriteTimeUtc.ToString('o')
@@ -102,9 +100,6 @@ $entries = foreach($category in $data.PSObject.Properties){
 $meta = Get-Item .\metadata.json
 $entries += [pscustomobject]@{
   type     = 'Metadata'
-  itemid   = 'metadata'
-  name     = 'metadata.json'
-  rarity   = $null
   path     = 'metadata.json'
   size     = $meta.Length
   mtime    = $meta.LastWriteTimeUtc.ToString('o')
