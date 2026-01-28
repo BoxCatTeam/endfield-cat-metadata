@@ -1,47 +1,41 @@
 # endfield-cat-metadata
 
-用于 `endfield-cat` 项目的角色/武器图标与元数据仓库。
+用于 `endfield-cat` 项目的角色/武器缩略图与元数据仓库。
 
 ## 目录结构
 
-- `metadata.json`：元数据列表（JSON 数组）
-- `Character/`：角色图标（`chr_*.png`）
-- `Weapon/`：武器图标（`wpn_*.png`）
+- `metadata.json`：元数据指针，指向下列文件
+- `locale/zh-CN/character.json`：角色元数据列表（JSON 数组）
+- `locale/zh-CN/weapon.json`：武器元数据列表（JSON 数组）
+- `images/icon/character/`：角色缩略图（`chr_*.png`）
+- `images/icon/weapon/`：武器缩略图（`wpn_*.png`）
 
-## `metadata.json` 格式
+## 元数据文件
 
-根节点按分类分组，例如：
+- `metadata.json`：指针文件
+- `locale/zh-CN/character.json`：角色数组
+- `locale/zh-CN/weapon.json`：武器数组
+
+单条示例（存于对应数组）：
 
 ```json
 {
-  "Weapon": [
-    {
-      "name": "熔铸火焰",
-      "itemid": "wpn_sword_0006",
-      "rarity": 6
-    }
-  ],
-  "Character": [
-    {
-      "name": "莱万汀",
-      "itemid": "chr_0016_laevat",
-      "rarity": 6
-    }
-  ]
+  "name": "熔铸火焰",
+  "itemid": "wpn_sword_0006",
+  "rarity": 6
 }
 ```
 
-- 顶层键：`Character` / `Weapon` 等分类（也是图片所在目录名）。
-- `itemid`：唯一 ID；对应图片文件名（`<分类>/Icon/<itemid>.png`）。
+- `itemid`：唯一 ID；对应图片文件名（`images/icon/<category>/<itemid>.png`）。
 - `name`：显示名。
 - `rarity`：稀有度（整数）。
 
 ## 资源命名约定
 
 - 仅收录并提交以 `chr_` / `wpn_` 命名的资源文件。
-- 图片文件名必须与 `itemid` 完全一致：`Character/chr_XXXX_xxx.png`、`Weapon/wpn_XXXX_xxx.png`。
-- `metadata.json` 中的每个 `itemid` 都应存在对应的 PNG 文件；反之亦然。
-- 角色/武器缩略图统一放在子目录：`Character/Icon/`、`Weapon/Icon/`。
+- 图片文件名必须与 `itemid` 完全一致：`images/icon/character/chr_XXXX_xxx.png`、`images/icon/weapon/wpn_XXXX_xxx.png`。
+- 元数据中的每个 `itemid` 都应存在对应的 PNG 文件；反之亦然。
+- 角色/武器缩略图统一放在：`images/icon/character/`、`images/icon/weapon/`。
 
 ## 快速校验（PowerShell）
 
@@ -79,36 +73,54 @@ $extra
 
 ## manifest.json
 
-- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `type`、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。同时会将 `metadata.json` 本身作为一条 `type=Metadata` 的记录加入 `entries`，便于客户端校验。
+- `manifest.json` 由元数据生成，包含每条资源的 `type`、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。元数据文件（`metadata.json` 指针、`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`）也会作为 `type=Metadata` 的记录加入 `entries`。
 - 生成命令（PowerShell）：
 
 ```powershell
-$data = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
-$entries = foreach($category in $data.PSObject.Properties){
-  foreach($i in $category.Value){
-    $path = Join-Path $category.Name (Join-Path 'Icon' ($i.itemid + '.png'))
-    $file = Get-Item $path
-    [pscustomobject]@{
-      type     = $category.Name
-      path     = $path
-      size     = $file.Length
-      mtime    = $file.LastWriteTimeUtc.ToString('o')
-      checksum = (Get-FileHash $path -Algorithm SHA256).Hash
-    }
+$char   = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\character.json | ConvertFrom-Json
+$weapon = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\weapon.json   | ConvertFrom-Json
+
+$entries = @()
+foreach($i in $weapon){
+  $path = "images/icon/weapon/$($i.itemid).png"
+  $file = Get-Item $path
+  $entries += [pscustomobject]@{
+    type     = 'Weapon'
+    path     = $path
+    size     = $file.Length
+    mtime    = $file.LastWriteTimeUtc.ToString('o')
+    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
   }
 }
-$meta = Get-Item .\metadata.json
-$entries += [pscustomobject]@{
-  type     = 'Metadata'
-  path     = 'metadata.json'
-  size     = $meta.Length
-  mtime    = $meta.LastWriteTimeUtc.ToString('o')
-  checksum = (Get-FileHash .\metadata.json -Algorithm SHA256).Hash
+foreach($i in $char){
+  $path = "images/icon/character/$($i.itemid).png"
+  $file = Get-Item $path
+  $entries += [pscustomobject]@{
+    type     = 'Character'
+    path     = $path
+    size     = $file.Length
+    mtime    = $file.LastWriteTimeUtc.ToString('o')
+    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
+  }
 }
+$metaPaths = @('metadata.json','locale/zh-CN/character.json','locale/zh-CN/weapon.json')
+foreach($p in $metaPaths){
+  $file = Get-Item $p
+  $entries += [pscustomobject]@{
+    type     = 'Metadata'
+    path     = $p.Replace('\','/')
+    size     = $file.Length
+    mtime    = $file.LastWriteTimeUtc.ToString('o')
+    checksum = (Get-FileHash $p -Algorithm SHA256).Hash
+  }
+}
+$metaRaw = Get-Content -Raw -Encoding UTF8 -Path $metaPaths
+$metaHash = [BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash([Text.Encoding]::UTF8.GetBytes($metaRaw))).Replace('-','')
+
 $manifest = [pscustomobject]@{
   package_version   = [DateTime]::UtcNow.ToString('yyyyMMddHHmmss')
   generated_at      = [DateTime]::UtcNow.ToString('o')
-  metadata_checksum = (Get-FileHash .\metadata.json -Algorithm SHA256).Hash
+  metadata_checksum = $metaHash
   item_count        = $entries.Count
   entries           = $entries
 }
