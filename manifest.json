@@ -1,8 +1,8 @@
 {
-  "package_version": "20260128190206",
-  "generated_at": "2026-01-28T19:02:06.3384101Z",
+  "package_version": "20260128190313",
+  "generated_at": "2026-01-28T19:03:13.4602090Z",
   "metadata_checksum": "D15B15C9DE3DFAFE9640845F75CB9BBFCCFCE7440020859EC8E3A0D660A39D18",
-  "item_count": 44,
+  "item_count": 45,
   "entries": [
     {
       "type": "Weapon",
@@ -443,6 +443,16 @@
       "size": 37063,
       "mtime": "2026-01-27T17:26:06.3888328Z",
       "checksum": "FD4DCB6278CAD5F589BBF80B920F0293B5036B434E70C40E5FE4765DAC15B658"
+    },
+    {
+      "type": "Metadata",
+      "itemid": "metadata",
+      "name": "metadata.json",
+      "rarity": null,
+      "path": "metadata.json",
+      "size": 4366,
+      "mtime": "2026-01-28T19:01:47.5391556Z",
+      "checksum": "D15B15C9DE3DFAFE9640845F75CB9BBFCCFCE7440020859EC8E3A0D660A39D18"
     }
   ]
 }

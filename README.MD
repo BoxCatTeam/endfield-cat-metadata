@@ -78,7 +78,7 @@ $extra
 
 ## manifest.json
 
-- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
+- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。同时会将 `metadata.json` 本身作为一条 `type=Metadata` 的记录加入 `entries`，便于客户端校验。
 - 生成命令（PowerShell）：
 
 ```powershell
@@ -98,6 +98,17 @@ $entries = foreach($category in $data.PSObject.Properties){
       checksum = (Get-FileHash $path -Algorithm SHA256).Hash
     }
   }
+}
+$meta = Get-Item .\metadata.json
+$entries += [pscustomobject]@{
+  type     = 'Metadata'
+  itemid   = 'metadata'
+  name     = 'metadata.json'
+  rarity   = $null
+  path     = 'metadata.json'
+  size     = $meta.Length
+  mtime    = $meta.LastWriteTimeUtc.ToString('o')
+  checksum = (Get-FileHash .\metadata.json -Algorithm SHA256).Hash
 }
 $manifest = [pscustomobject]@{
   package_version   = [DateTime]::UtcNow.ToString('yyyyMMddHHmmss')
