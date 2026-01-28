@@ -4,7 +4,6 @@
 
 ## 目录结构
 
-- `metadata.json`：元数据指针，指向下列文件
 - `locale/zh-CN/character.json`：角色元数据列表（JSON 数组）
 - `locale/zh-CN/weapon.json`：武器元数据列表（JSON 数组）
 - `images/icon/character/`：角色缩略图（`chr_*.png`）
@@ -12,7 +11,6 @@
 
 ## 元数据文件
 
-- `metadata.json`：指针文件
 - `locale/zh-CN/character.json`：角色数组
 - `locale/zh-CN/weapon.json`：武器数组
 
@@ -20,14 +18,14 @@
 
 ```json
 {
-  "type": "Weapon",
+  "type": "weapon",
   "name": "熔铸火焰",
   "itemid": "wpn_sword_0006",
   "rarity": 6
 }
 ```
 
-- `type`：`Character` / `Weapon`。
+- `type`：`character` / `weapon`（小写）。
 - `itemid`：唯一 ID；对应图片文件名（`images/icon/<category>/<itemid>.png`）。
 - `name`：显示名。
 - `rarity`：稀有度（整数）。
@@ -75,7 +73,8 @@ $extra
 
 ## manifest.json
 
-- `manifest.json` 由元数据生成，包含每条资源的 `type`、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。元数据文件（`metadata.json` 指针、`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`）也会作为 `type=Metadata` 的记录加入 `entries`。
+- `manifest.json` 由元数据生成，包含每条资源的 `type`（MIME，如 `image/png`）、`role`（用途，如 `icon`/`localization`）、`category`（如 `character`/`weapon`）、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
+- 元数据文件（`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`）作为 `role=localization`、`category=character|weapon` 的记录加入 `entries`。
 - 生成命令（PowerShell）：
 
 ```powershell
@@ -87,7 +86,9 @@ foreach($i in $weapon){
   $path = "images/icon/weapon/$($i.itemid).png"
   $file = Get-Item $path
   $entries += [pscustomobject]@{
-    type     = 'Weapon'
+    type     = 'image/png'
+    role     = 'icon'
+    category = 'weapon'
     path     = $path
     size     = $file.Length
     mtime    = $file.LastWriteTimeUtc.ToString('o')
@@ -98,25 +99,32 @@ foreach($i in $char){
   $path = "images/icon/character/$($i.itemid).png"
   $file = Get-Item $path
   $entries += [pscustomobject]@{
-    type     = 'Character'
+    type     = 'image/png'
+    role     = 'icon'
+    category = 'character'
     path     = $path
     size     = $file.Length
     mtime    = $file.LastWriteTimeUtc.ToString('o')
     checksum = (Get-FileHash $path -Algorithm SHA256).Hash
   }
 }
-$metaPaths = @('metadata.json','locale/zh-CN/character.json','locale/zh-CN/weapon.json')
-foreach($p in $metaPaths){
-  $file = Get-Item $p
+$metaPaths = @(
+  @{ path = 'locale/zh-CN/character.json'; category = 'character' },
+  @{ path = 'locale/zh-CN/weapon.json'    ; category = 'weapon'    }
+)
+foreach($m in $metaPaths){
+  $file = Get-Item $m.path
   $entries += [pscustomobject]@{
-    type     = 'Metadata'
-    path     = $p.Replace('\','/')
+    type     = 'application/json'
+    role     = 'localization'
+    category = $m.category
+    path     = $m.path.Replace('\','/')
     size     = $file.Length
     mtime    = $file.LastWriteTimeUtc.ToString('o')
-    checksum = (Get-FileHash $p -Algorithm SHA256).Hash
+    checksum = (Get-FileHash $m.path -Algorithm SHA256).Hash
   }
 }
-$metaRaw = Get-Content -Raw -Encoding UTF8 -Path $metaPaths
+$metaRaw = Get-Content -Raw -Encoding UTF8 -Path ($metaPaths.path)
 $metaHash = [BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash([Text.Encoding]::UTF8.GetBytes($metaRaw))).Replace('-','')
 
 $manifest = [pscustomobject]@{
