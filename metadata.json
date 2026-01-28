@@ -250,5 +250,17 @@
     "name": "安塔尔",
     "itemid": "chr_0023_antal",
     "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "黎风",
+    "itemid": "chr_0015_lifeng",
+    "rarity": 6
+  },
+  {
+    "type": "Character",
+    "name": "狼卫",
+    "itemid": "chr_0006_wolfgd",
+    "rarity": 5
   }
 ]
