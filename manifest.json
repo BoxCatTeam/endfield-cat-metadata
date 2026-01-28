@@ -1,7 +1,7 @@
 {
-  "package_version": "20260128192941",
-  "generated_at": "2026-01-28T19:29:41.5486962Z",
-  "metadata_checksum": "B621AB08A4FEFDD94B8863A4EC52181ED6846AA5B9225B883E25207A65A23EA2",
+  "package_version": "20260128193246",
+  "generated_at": "2026-01-28T19:32:46.9046918Z",
+  "metadata_checksum": "A105ADFFC2A657259994105B77F38D3E101C62090F62AB2E65A1AC85C4749225",
   "item_count": 47,
   "entries": [
     {
@@ -322,16 +322,16 @@
     {
       "type": "Metadata",
       "path": "locale/zh-CN/character.json",
-      "size": 1735,
-      "mtime": "2026-01-28T19:29:20.7879905Z",
-      "checksum": "4716B891EDC0ED1C48FBAF7BC4E30E7A7DB99EF960C80208A338916E1A823B36"
+      "size": 2255,
+      "mtime": "2026-01-28T19:32:36.3998077Z",
+      "checksum": "7A6137CB0999EC3569768E4544A8EE08741EB1DF670AD88D92C6DBCD829C1AED"
     },
     {
       "type": "Metadata",
       "path": "locale/zh-CN/weapon.json",
-      "size": 2153,
-      "mtime": "2026-01-28T19:29:20.7902014Z",
-      "checksum": "916A6FC9B3C6FB2DF56D0B06725BB663FDAB21A052479B3FAF7C0D95EED30E09"
+      "size": 2705,
+      "mtime": "2026-01-28T19:32:36.4033069Z",
+      "checksum": "7C45C063A5EA4ED137A30750565EAA52770A69C4C4DB781FD0949C3B3F08D4CB"
     }
   ]
 }

@@ -20,12 +20,14 @@
 
 ```json
 {
+  "type": "Weapon",
   "name": "熔铸火焰",
   "itemid": "wpn_sword_0006",
   "rarity": 6
 }
 ```
 
+- `type`：`Character` / `Weapon`。
 - `itemid`：唯一 ID；对应图片文件名（`images/icon/<category>/<itemid>.png`）。
 - `name`：显示名。
 - `rarity`：稀有度（整数）。
