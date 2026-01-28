@@ -1,0 +1,254 @@
+[
+  {
+    "type": "Weapon",
+    "name": "楔子",
+    "itemid": "wpn_pistol_0008",
+    "rarity": 6
+  },
+  {
+    "type": "Weapon",
+    "name": "熔铸火焰",
+    "itemid": "wpn_sword_0006",
+    "rarity": 6
+  },
+  {
+    "type": "Weapon",
+    "name": "同类相食",
+    "itemid": "wpn_pistol_0009",
+    "rarity": 6
+  },
+  {
+    "type": "Weapon",
+    "name": "悼亡诗",
+    "itemid": "wpn_funnel_0005",
+    "rarity": 5
+  },
+  {
+    "name": "古渠",
+    "itemid": "wpn_claym_0014",
+    "type": "Weapon",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "O.B.J.术识",
+    "itemid": "wpn_funnel_0014",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "布道自由",
+    "itemid": "wpn_funnel_0012",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "O.B.J.尖峰",
+    "itemid": "wpn_lance_0013",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "钢铁余音",
+    "itemid": "wpn_sword_0005",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "十二问",
+    "itemid": "wpn_sword_0018",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "向心之引",
+    "itemid": "wpn_lance_0006",
+    "rarity": 5
+  },
+  {
+    "name": "坚城铸造者",
+    "itemid": "wpn_sword_0007",
+    "type": "Weapon",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "O.B.J.重荷",
+    "itemid": "wpn_claym_0015",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "逐鳞3.0",
+    "itemid": "wpn_sword_0020",
+    "rarity": 5
+  },
+  {
+    "type": "Weapon",
+    "name": "寻路者道标",
+    "itemid": "wpn_lance_0003",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "长路",
+    "itemid": "wpn_pistol_0003",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "呼啸守卫",
+    "itemid": "wpn_pistol_0002",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "浪潮",
+    "itemid": "wpn_sword_0009",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "应急手段",
+    "itemid": "wpn_sword_0008",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "天使杀手",
+    "itemid": "wpn_lance_0008",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "淬火者",
+    "itemid": "wpn_claym_0009",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "全自动骇新星",
+    "itemid": "wpn_funnel_0001",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "荧光雷羽",
+    "itemid": "wpn_funnel_0003",
+    "rarity": 4
+  },
+  {
+    "type": "Weapon",
+    "name": "工业零点一",
+    "itemid": "wpn_claym_0003",
+    "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "莱万汀",
+    "itemid": "chr_0016_laevat",
+    "rarity": 6
+  },
+  {
+    "type": "Character",
+    "name": "艾尔黛拉",
+    "itemid": "chr_0025_ardelia",
+    "rarity": 6
+  },
+  {
+    "name": "别礼",
+    "itemid": "chr_0026_lastrite",
+    "type": "Character",
+    "rarity": 6
+  },
+  {
+    "type": "Character",
+    "name": "余烬",
+    "itemid": "chr_0009_azrila",
+    "rarity": 6
+  },
+  {
+    "type": "Character",
+    "name": "骏卫",
+    "itemid": "chr_0029_pograni",
+    "rarity": 6
+  },
+  {
+    "type": "Character",
+    "name": "阿列什",
+    "itemid": "chr_0024_deepfin",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "大潘",
+    "itemid": "chr_0018_dapan",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "弧光",
+    "itemid": "chr_0007_ikut",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "艾维文娜",
+    "itemid": "chr_0012_avywen",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "佩丽卡",
+    "itemid": "chr_0004_pelica",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "昼雪",
+    "itemid": "chr_0014_aurora",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "陈千语",
+    "itemid": "chr_0005_chen",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "赛希",
+    "itemid": "chr_0011_seraph",
+    "rarity": 5
+  },
+  {
+    "type": "Character",
+    "name": "卡契尔",
+    "itemid": "chr_0020_meurs",
+    "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "埃特拉",
+    "itemid": "chr_0021_whiten",
+    "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "萤石",
+    "itemid": "chr_0022_bounda",
+    "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "秋栗",
+    "itemid": "chr_0019_karin",
+    "rarity": 4
+  },
+  {
+    "type": "Character",
+    "name": "安塔尔",
+    "itemid": "chr_0023_antal",
+    "rarity": 4
+  }
+]
