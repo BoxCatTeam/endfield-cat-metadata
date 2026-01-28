@@ -10,21 +10,31 @@
 
 ## `metadata.json` 格式
 
-根节点为数组，每个元素示例：
+根节点按分类分组，例如：
 
 ```json
 {
-  "type": "Weapon",
-  "name": "熔铸火焰",
-  "itemid": "wpn_sword_0006",
-  "rarity": 6
+  "Weapon": [
+    {
+      "name": "熔铸火焰",
+      "itemid": "wpn_sword_0006",
+      "rarity": 6
+    }
+  ],
+  "Character": [
+    {
+      "name": "莱万汀",
+      "itemid": "chr_0016_laevat",
+      "rarity": 6
+    }
+  ]
 }
 ```
 
-- `type`：`Character` 或 `Weapon`（同时也是图片所在目录名）
-- `name`：显示名
-- `itemid`：唯一 ID；对应图片文件名（`<type>/<itemid>.png`）
-- `rarity`：稀有度（整数）
+- 顶层键：`Character` / `Weapon` 等分类（也是图片所在目录名）。
+- `itemid`：唯一 ID；对应图片文件名（`<分类>/<itemid>.png`）。
+- `name`：显示名。
+- `rarity`：稀有度（整数）。
 
 ## 资源命名约定
 
@@ -72,29 +82,31 @@ $extra
 - 生成命令（PowerShell）：
 
 ```powershell
-$items = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
-$entries = foreach($i in $items){
-  $path = Join-Path $i.type ($i.itemid + '.png')
-  $file = Get-Item $path
-  [pscustomobject]@{
-    type     = $i.type
-    itemid   = $i.itemid
-    name     = $i.name
-    rarity   = $i.rarity
-    path     = $path
-    size     = $file.Length
-    mtime    = $file.LastWriteTimeUtc.ToString('o')
-    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
+$data = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
+$entries = foreach($category in $data.PSObject.Properties){
+  foreach($i in $category.Value){
+    $path = Join-Path $category.Name ($i.itemid + '.png')
+    $file = Get-Item $path
+    [pscustomobject]@{
+      type     = $category.Name
+      itemid   = $i.itemid
+      name     = $i.name
+      rarity   = $i.rarity
+      path     = $path
+      size     = $file.Length
+      mtime    = $file.LastWriteTimeUtc.ToString('o')
+      checksum = (Get-FileHash $path -Algorithm SHA256).Hash
+    }
   }
 }
 $manifest = [pscustomobject]@{
   package_version   = [DateTime]::UtcNow.ToString('yyyyMMddHHmmss')
   generated_at      = [DateTime]::UtcNow.ToString('o')
   metadata_checksum = (Get-FileHash .\metadata.json -Algorithm SHA256).Hash
-  item_count        = $items.Count
+  item_count        = $entries.Count
   entries           = $entries
 }
-$manifest | ConvertTo-Json -Depth 5 | Set-Content -Path .\manifest.json -Encoding UTF8
+$manifest | ConvertTo-Json -Depth 6 | Set-Content -Path .\manifest.json -Encoding UTF8
 ```
 
 - 客户端可先比对 `package_version` / `metadata_checksum`，再按需校验单个资源的 `checksum` 与文件大小。
