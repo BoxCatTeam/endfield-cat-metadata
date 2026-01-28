@@ -66,3 +66,34 @@ $extra
 
 请确保你有权提交/分发相关资源文件。
 
+## manifest.json
+
+- `manifest.json` 由 `metadata.json` 生成，包含每条资源的 `checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
+- 生成命令（PowerShell）：
+
+```powershell
+$items = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
+$entries = foreach($i in $items){
+  $path = Join-Path $i.type ($i.itemid + '.png')
+  $file = Get-Item $path
+  [pscustomobject]@{
+    type     = $i.type
+    itemid   = $i.itemid
+    name     = $i.name
+    rarity   = $i.rarity
+    size     = $file.Length
+    mtime    = $file.LastWriteTimeUtc.ToString('o')
+    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
+  }
+}
+$manifest = [pscustomobject]@{
+  package_version   = [DateTime]::UtcNow.ToString('yyyyMMddHHmmss')
+  generated_at      = [DateTime]::UtcNow.ToString('o')
+  metadata_checksum = (Get-FileHash .\metadata.json -Algorithm SHA256).Hash
+  item_count        = $items.Count
+  entries           = $entries
+}
+$manifest | ConvertTo-Json -Depth 5 | Set-Content -Path .\manifest.json -Encoding UTF8
+```
+
+- 客户端可先比对 `package_version` / `metadata_checksum`，再按需校验单个资源的 `checksum` 与文件大小。
