@@ -1,0 +1,40 @@
+[
+    {
+        "poolId": "stander",
+        "poolName": "基础寻访",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Standard",
+        "start_time": 1769050800,
+        "end_time": null
+    },
+    {
+        "poolId": "beginner",
+        "poolName": "启程寻访",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Beginner",
+        "start_time": 1769050800,
+        "end_time": null
+    },
+    {
+        "poolId": "special_1_0_1",
+        "poolName": "熔火灼痕",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Special",
+        "start_time": 1769050800,
+        "end_time": 1770436800,
+        "up": [
+            "chr_0016_laevat"
+        ]
+    },
+    {
+        "poolId": "weponbox_1_0_1",
+        "poolName": "熔铸申领",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": 1769050800,
+        "end_time": null,
+        "up": [
+            "wpn_sword_0006"
+        ]
+    }
+]

@@ -5,9 +5,10 @@
 ## 目录结构
 
 - `locale/zh-CN/character.json`：角色元数据列表（JSON 数组）
+- `locale/zh-CN/gacha_pool.json`：卡池本地化数据（JSON 数组）
 - `locale/zh-CN/weapon.json`：武器元数据列表（JSON 数组）
-- `images/icon/character/`：角色缩略图（`chr_*.png`）
-- `images/icon/weapon/`：武器缩略图（`wpn_*.png`）
+- `images/character/icon/`：角色缩略图（`chr_*.png`）
+- `images/weapon/icon/`：武器缩略图（`wpn_*.png`）
 
 ## 元数据文件
 
@@ -26,36 +27,40 @@
 ```
 
 - `type`：`character` / `weapon`（小写）。
-- `itemid`：唯一 ID；对应图片文件名（`images/icon/<category>/<itemid>.png`）。
+- `itemid`：唯一 ID；对应图片文件名（`images/<category>/icon/<itemid>.png`）。
 - `name`：显示名。
 - `rarity`：稀有度（整数）。
 
 ## 资源命名约定
 
 - 仅收录并提交以 `chr_` / `wpn_` 命名的资源文件。
-- 图片文件名必须与 `itemid` 完全一致：`images/icon/character/chr_XXXX_xxx.png`、`images/icon/weapon/wpn_XXXX_xxx.png`。
+- 图片文件名必须与 `itemid` 完全一致：`images/character/icon/chr_XXXX_xxx.png`、`images/weapon/icon/wpn_XXXX_xxx.png`。
 - 元数据中的每个 `itemid` 都应存在对应的 PNG 文件；反之亦然。
-- 角色/武器缩略图统一放在：`images/icon/character/`、`images/icon/weapon/`。
+- 角色/武器缩略图统一放在：`images/character/icon/`、`images/weapon/icon/`。
 
 ## 快速校验（PowerShell）
 
-检查 `metadata.json` 中是否存在缺失图片：
+使用 `manifest.json`（仅校验 `role=icon` 的记录）检查是否有缺失文件：
 
 ```powershell
-$items = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
-$missing = $items | Where-Object {
-  -not (Test-Path (Join-Path $_.type ($_.itemid + '.png')))
-}
-$missing | Format-Table type,itemid,name,rarity
+$manifest = Get-Content -Raw -Encoding UTF8 .\manifest.json | ConvertFrom-Json
+$icons = $manifest.entries | Where-Object { $_.role -eq 'icon' }
+$missing = $icons | Where-Object { -not (Test-Path $_.path) }
+$missing | Select-Object category,path,checksum
 ```
 
-检查目录中是否存在“未在 metadata.json 声明”的 `chr_` / `wpn_` 图片：
+检查目录中是否存在“未在 `manifest.json` 声明”的 `chr_` / `wpn_` 图片：
 
 ```powershell
-$items = Get-Content -Raw -Encoding UTF8 .\metadata.json | ConvertFrom-Json
-$declared = $items.itemid
-$extra = Get-ChildItem -Recurse -File -Filter *.png |
-  Where-Object { $_.BaseName -match '^(chr_|wpn_)' -and ($declared -notcontains $_.BaseName) } |
+$manifest = Get-Content -Raw -Encoding UTF8 .\manifest.json | ConvertFrom-Json
+$root = Get-Location
+$declared = $manifest.entries | Where-Object { $_.role -eq 'icon' } | ForEach-Object {
+  (Join-Path $root $_.path).Replace('\','/').ToLower()
+}
+$extra = Get-ChildItem -Recurse -File -Filter *.png -Path .\images |
+  Where-Object {
+    $_.BaseName -match '^(chr_|wpn_)' -and ($declared -notcontains ($_.FullName.Replace('\','/').ToLower()))
+  } |
   Select-Object FullName
 $extra
 ```
@@ -74,16 +79,17 @@ $extra
 ## manifest.json
 
 - `manifest.json` 由元数据生成，包含每条资源的 `type`（MIME，如 `image/png`）、`role`（用途，如 `icon`/`localization`）、`category`（如 `character`/`weapon`）、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
-- 元数据文件（`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`）作为 `role=localization`、`category=character|weapon` 的记录加入 `entries`。
+- 元数据文件（`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`、`locale/zh-CN/gacha_pool.json`）作为 `role=localization` 的记录加入 `entries`。
 - 生成命令（PowerShell）：
 
 ```powershell
 $char   = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\character.json | ConvertFrom-Json
+$gacha  = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\gacha_pool.json | ConvertFrom-Json
 $weapon = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\weapon.json   | ConvertFrom-Json
 
 $entries = @()
 foreach($i in $weapon){
-  $path = "images/icon/weapon/$($i.itemid).png"
+  $path = "images/weapon/icon/$($i.itemid).png"
   $file = Get-Item $path
   $entries += [pscustomobject]@{
     type     = 'image/png'
@@ -96,7 +102,7 @@ foreach($i in $weapon){
   }
 }
 foreach($i in $char){
-  $path = "images/icon/character/$($i.itemid).png"
+  $path = "images/character/icon/$($i.itemid).png"
   $file = Get-Item $path
   $entries += [pscustomobject]@{
     type     = 'image/png'
@@ -110,6 +116,7 @@ foreach($i in $char){
 }
 $metaPaths = @(
   @{ path = 'locale/zh-CN/character.json'; category = 'character' },
+  @{ path = 'locale/zh-CN/gacha_pool.json'; category = 'gacha_pool' },
   @{ path = 'locale/zh-CN/weapon.json'    ; category = 'weapon'    }
 )
 foreach($m in $metaPaths){
