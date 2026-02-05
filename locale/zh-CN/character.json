@@ -118,5 +118,29 @@
     "itemid": "chr_0006_wolfgd",
     "name": "狼卫",
     "rarity": 5
+  },
+  {
+    "type": "character",
+    "itemid": "chr_0017_yvonne",
+    "name": "伊冯",
+    "rarity": 6
+  },
+  {
+    "type": "character",
+    "itemid": "chr_0013_aglina",
+    "name": "洁尔佩塔",
+    "rarity": 6
+  },
+  {
+    "type": "character",
+    "itemid": "chr_0003_endminf",
+    "name": "管理员(男)",
+    "rarity": 6
+  },
+  {
+    "type": "character",
+    "itemid": "chr_0002_endminm",
+    "name": "管理员(女)",
+    "rarity": 6
   }
 ]

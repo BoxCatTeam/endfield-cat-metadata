@@ -1,188 +1,53 @@
 {
-  "package_version": "20260130091731",
-  "generated_at": "2026-01-30T09:17:31.6666162Z",
-  "metadata_checksum": "F148167F73EECD665619C6E0E2FFC401112E376D45B836C2C151CCE1209D06B3",
-  "item_count": 91,
+  "package_version": "20260205195239",
+  "generated_at": "2026-02-05T19:52:39.7680821Z",
+  "metadata_checksum": "EE3A1D0818A41AC15135748093C6D89397C9A64CE33B176388A4FEC48E977D35",
+  "item_count": 115,
   "entries": [
     {
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_pistol_0008.png",
-      "size": 6319,
-      "mtime": "2026-01-27T18:22:24.9050569Z",
-      "checksum": "1CBC00FEB866768BE1BDD9F2F7D3F56E1A5F4C624C4448A66119582A872FA51A"
+      "path": "images/weapon/icon/wpn_claym_0003.png",
+      "size": 6619,
+      "mtime": "2026-01-27T18:22:27.2824799Z",
+      "checksum": "EA7E3AD070EBE6A175DCB2B577A8DB11A9A7122601903B6B88D51A2A00B498A8"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0006.png",
-      "size": 6213,
-      "mtime": "2026-01-27T18:22:25.4682911Z",
-      "checksum": "9FF9C160F9335BE4F03C942187AB5499FABC6E624DA81B956ABD1900E1DDA45C"
+      "path": "images/weapon/icon/wpn_claym_0004.png",
+      "size": 7006,
+      "mtime": "2026-01-27T18:22:25.2779735Z",
+      "checksum": "8864970D0400BE3FC4B92C5E04813CC86349F071E3CB572A19991D4EFCCB8913"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_pistol_0009.png",
-      "size": 5305,
-      "mtime": "2026-01-27T18:22:25.1855355Z",
-      "checksum": "5562496C369DB4F2477481C667C75712A7014F6E6BDF65DE6B6F57A4E7D5CDDD"
+      "path": "images/weapon/icon/wpn_claym_0006.png",
+      "size": 7823,
+      "mtime": "2026-01-27T18:22:25.5102120Z",
+      "checksum": "BBC17055B60861EF5FA6D38335149FCA0C6BD0C1D2FE3523720532267F8D9F76"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_funnel_0005.png",
-      "size": 6042,
-      "mtime": "2026-01-27T18:22:26.9773922Z",
-      "checksum": "4E9C1E4974873D8D8D9C89E009714F6472C51A99E35596E113BED92956D481BA"
+      "path": "images/weapon/icon/wpn_claym_0007.png",
+      "size": 8292,
+      "mtime": "2026-01-27T18:22:25.9059114Z",
+      "checksum": "4B41471499BF869EA0F1829B03F65204F4983CBC73DE0275A36E64840D738592"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_claym_0014.png",
-      "size": 6821,
-      "mtime": "2026-01-27T18:22:26.3423755Z",
-      "checksum": "32491B66A9963A181A19FF1FA62D994C915032EFA81DA9A666A917C1310F607D"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_funnel_0014.png",
-      "size": 5737,
-      "mtime": "2026-01-27T18:22:26.7786157Z",
-      "checksum": "4488150E7D46862C9932895B1DBB2F16B0B5439775D895707DA976124B3C0BC1"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_funnel_0012.png",
-      "size": 5805,
-      "mtime": "2026-01-27T18:22:26.5962544Z",
-      "checksum": "0FE04378937136B903AF477274DE4551A5DD28172D9C21E80B7D4228BADE0782"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_lance_0013.png",
-      "size": 5428,
-      "mtime": "2026-01-27T18:22:26.6797599Z",
-      "checksum": "2A659DFF3782A89F48B66BB015A3C2570064D97CD3AF16D8E69CD4B28DAA404B"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0005.png",
-      "size": 5633,
-      "mtime": "2026-01-27T18:22:27.0227952Z",
-      "checksum": "F7C021C1876FFF7A8901E806E1FBA9D0248483A467E7DACB3D1282BD8D72C74C"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0018.png",
-      "size": 5771,
-      "mtime": "2026-01-27T18:22:26.6453501Z",
-      "checksum": "4DC19A624FCF560634D9529C6EFC6DDD49CAA71C459A3877D681CC50A5E65852"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_lance_0006.png",
-      "size": 7089,
-      "mtime": "2026-01-27T18:22:26.8912090Z",
-      "checksum": "B01E1C4E06CCA86412CB020FC869C3DEEF1115900BB35D190AD4A0C870B94A1C"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0007.png",
-      "size": 5588,
-      "mtime": "2026-01-27T18:22:26.2419200Z",
-      "checksum": "52F67FC37BB3458E54C312249670C8A259FD0A547D6A1DBC2863646B37F9D2BF"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_claym_0015.png",
-      "size": 7031,
-      "mtime": "2026-01-27T18:22:26.7328963Z",
-      "checksum": "21505CB01160EFFF714A7A96EFB0F8B46C3F82D22F9D88F23F7DFDF3FCDAD125"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0020.png",
-      "size": 5619,
-      "mtime": "2026-01-27T18:22:26.4141816Z",
-      "checksum": "DFB801B548214C6277FA14AE02115859C52497B99D840809D90E0C014E59E32C"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_lance_0003.png",
-      "size": 5194,
-      "mtime": "2026-01-27T18:22:27.0584811Z",
-      "checksum": "BD59C2B84141F3E0D43A72000C856C1D756FFC00C0DE4CBB489D78FAB66D6F4C"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_pistol_0003.png",
-      "size": 5538,
-      "mtime": "2026-01-27T18:22:27.4104485Z",
-      "checksum": "893CEC390AE85E198B0C40219CCA25828500C1C2B4E6ADFA2A3CF352B287C785"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_pistol_0002.png",
-      "size": 4915,
-      "mtime": "2026-01-27T18:22:27.2445198Z",
-      "checksum": "3D782A8BCB14390CE4961C3CC6312A5C50746511E474AB20716B64272F0E3CE2"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0009.png",
-      "size": 5071,
-      "mtime": "2026-01-27T18:22:27.3758045Z",
-      "checksum": "B7112CC1A53BDB2EF03F1E01C9A1A759E77FB598137FFC32D16CC0F240E1C0D1"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_sword_0008.png",
-      "size": 5580,
-      "mtime": "2026-01-27T18:22:27.2032643Z",
-      "checksum": "EAD3341ECC7534F3781AE21CD335FA4CF702B0A37D1D14E01B0CF63DD74187A8"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "weapon",
-      "path": "images/weapon/icon/wpn_lance_0008.png",
-      "size": 5765,
-      "mtime": "2026-01-27T18:22:27.1126027Z",
-      "checksum": "629CD706E1DC00CF3C4C4DA10A1B67DB6ADC0930674312A1AE0888B7CA23426D"
+      "path": "images/weapon/icon/wpn_claym_0008.png",
+      "size": 7548,
+      "mtime": "2026-01-27T18:22:25.6504821Z",
+      "checksum": "69BBCAA78C067C637548CB69343EB6730BEC526E55884FBBE5E669BA9027BB0A"
     },
     {
       "type": "image/png",
@@ -197,10 +62,73 @@
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0010.png",
+      "size": 6618,
+      "mtime": "2026-01-27T18:22:27.6612706Z",
+      "checksum": "7D6B2EAC8FC39195DD1A62F3FB066D47E73589D2CABD38AC38883E766A0F0B53"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0011.png",
+      "size": 7051,
+      "mtime": "2026-01-27T18:22:26.0742581Z",
+      "checksum": "D4674FE95F2BB8C1B795A59AACDC45A04C1350AF2B2B8E605A9D45EE546D14D9"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0012.png",
+      "size": 8389,
+      "mtime": "2026-01-27T18:22:26.5500775Z",
+      "checksum": "84741B6B888F236B12CF96B3A9E5525B2EDB0BFB4A1FBB239F40C273B37E54EC"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0013.png",
+      "size": 6858,
+      "mtime": "2026-01-27T18:22:24.9458811Z",
+      "checksum": "E2DD3A27BABB99458B985052D0B193C7C767942FF05CFA637D6E5A1B4CFAC46E"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0014.png",
+      "size": 6821,
+      "mtime": "2026-01-27T18:22:26.3423755Z",
+      "checksum": "32491B66A9963A181A19FF1FA62D994C915032EFA81DA9A666A917C1310F607D"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_claym_0015.png",
+      "size": 7031,
+      "mtime": "2026-01-27T18:22:26.7328963Z",
+      "checksum": "21505CB01160EFFF714A7A96EFB0F8B46C3F82D22F9D88F23F7DFDF3FCDAD125"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
       "path": "images/weapon/icon/wpn_funnel_0001.png",
       "size": 6022,
       "mtime": "2026-01-27T18:22:27.1637935Z",
       "checksum": "2FFAF73D8E193BF1E37D0EC9DA9AAB04B68DCF72201134BDBEA686F43703DF0A"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0002.png",
+      "size": 5926,
+      "mtime": "2026-01-27T18:22:27.4967683Z",
+      "checksum": "AB1E59943B5F943B051087E506A2D6F1E3101AE4A7E58E4F6C4DAA79FEEE3A61"
     },
     {
       "type": "image/png",
@@ -215,307 +143,442 @@
       "type": "image/png",
       "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/icon/wpn_claym_0003.png",
+      "path": "images/weapon/icon/wpn_funnel_0004.png",
+      "size": 6031,
+      "mtime": "2026-01-27T18:22:26.3817032Z",
+      "checksum": "C03DCF5616C74A5B150BDA3C9F329B6DA5D04C6F858DDC54A48929986A1757D1"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0005.png",
+      "size": 6042,
+      "mtime": "2026-01-27T18:22:26.9773922Z",
+      "checksum": "4E9C1E4974873D8D8D9C89E009714F6472C51A99E35596E113BED92956D481BA"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0006.png",
+      "size": 6499,
+      "mtime": "2026-01-27T18:22:25.3445918Z",
+      "checksum": "34494CC31DD8A041DCA2406EA304302BE1FD5FB08BE225B1B403E69369E5C322"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0007.png",
+      "size": 6177,
+      "mtime": "2026-01-27T18:22:26.1984671Z",
+      "checksum": "EEC5C131862208D05E0DB4CE52CBEA8C31D4B19AC1490D51D3D4C9837B7D0E53"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0008.png",
+      "size": 6239,
+      "mtime": "2026-01-27T18:22:25.5530257Z",
+      "checksum": "9F26C225CE70D3240FD7BF1A91E043B90CBA06BBF394C208E46196D64C445957"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0009.png",
+      "size": 6227,
+      "mtime": "2026-01-27T18:22:25.7310772Z",
+      "checksum": "7DD942AB046CAA9D2C886A94476C16E78E3EDA397CF625A6F879CE8FD2B6031F"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0010.png",
+      "size": 5793,
+      "mtime": "2026-01-27T18:22:25.8620274Z",
+      "checksum": "AFDD9B041B01942E87C665F0A7C8B83B890F286CD2613D7B107134900DF065CA"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0011.png",
+      "size": 6332,
+      "mtime": "2026-01-27T18:22:25.9505586Z",
+      "checksum": "45C9383131C7C75CB3850E0825F250E72C2F816A5F8256022095E2A1CB0F0728"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0012.png",
+      "size": 5805,
+      "mtime": "2026-01-27T18:22:26.5962544Z",
+      "checksum": "0FE04378937136B903AF477274DE4551A5DD28172D9C21E80B7D4228BADE0782"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_funnel_0013.png",
       "size": 6619,
-      "mtime": "2026-01-27T18:22:27.2824799Z",
-      "checksum": "EA7E3AD070EBE6A175DCB2B577A8DB11A9A7122601903B6B88D51A2A00B498A8"
+      "mtime": "2026-01-27T18:22:24.9855039Z",
+      "checksum": "24F5CA8A9F568809E02186D565C927852E308B229E2BEC964F4BD7C64C777525"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_claym_0003.png",
-      "size": 123802,
-      "mtime": "2026-01-29T18:24:34.2870890Z",
-      "checksum": "3216A9155EC8788E99A9A962729D80ED34061C5C3665F7F9D89EFED40318481A"
+      "path": "images/weapon/icon/wpn_funnel_0014.png",
+      "size": 5737,
+      "mtime": "2026-01-27T18:22:26.7786157Z",
+      "checksum": "4488150E7D46862C9932895B1DBB2F16B0B5439775D895707DA976124B3C0BC1"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_claym_0009.png",
-      "size": 140587,
-      "mtime": "2026-01-29T18:24:34.2189330Z",
-      "checksum": "BD9CAA90FB491EF458BE1C3E536ABD8F6EC275584AC0C083B2C3AD5C05FA043E"
+      "path": "images/weapon/icon/wpn_lance_0003.png",
+      "size": 5194,
+      "mtime": "2026-01-27T18:22:27.0584811Z",
+      "checksum": "BD59C2B84141F3E0D43A72000C856C1D756FFC00C0DE4CBB489D78FAB66D6F4C"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_claym_0014.png",
-      "size": 126628,
-      "mtime": "2026-01-29T18:24:34.0690704Z",
-      "checksum": "2E5948A20D83084548CD9AFE26FC8865CEBD06B965A8A2EF958F2421FD726C85"
+      "path": "images/weapon/icon/wpn_lance_0004.png",
+      "size": 5564,
+      "mtime": "2026-01-27T18:22:26.4586826Z",
+      "checksum": "8AE344489C429E4EC69D536F9CBFBDFFCFC7AD25E11383530CBB377365DD2568"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_claym_0015.png",
-      "size": 132182,
-      "mtime": "2026-01-29T18:24:33.9248203Z",
-      "checksum": "0CF90BD973ED5F686F5948940D8D412967F4BEEC775E2EB819DCC9BC722AF064"
+      "path": "images/weapon/icon/wpn_lance_0006.png",
+      "size": 7089,
+      "mtime": "2026-01-27T18:22:26.8912090Z",
+      "checksum": "B01E1C4E06CCA86412CB020FC869C3DEEF1115900BB35D190AD4A0C870B94A1C"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_funnel_0001.png",
-      "size": 108919,
-      "mtime": "2026-01-29T18:24:32.1530098Z",
-      "checksum": "CDE04CBC223584EA1E444218E33FFAE16ED4E5E0F989A682D9C1E88C44945315"
+      "path": "images/weapon/icon/wpn_lance_0008.png",
+      "size": 5765,
+      "mtime": "2026-01-27T18:22:27.1126027Z",
+      "checksum": "629CD706E1DC00CF3C4C4DA10A1B67DB6ADC0930674312A1AE0888B7CA23426D"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_funnel_0003.png",
-      "size": 120619,
-      "mtime": "2026-01-29T18:24:32.0857169Z",
-      "checksum": "C9DF8B882D154D77970DC33285D5BDC32EDCC70D64E64EFA55D5BDEFDDF0E6FA"
+      "path": "images/weapon/icon/wpn_lance_0009.png",
+      "size": 4680,
+      "mtime": "2026-01-27T18:22:27.7147681Z",
+      "checksum": "4B7DA90083C1E2239F8407E77FB3F11F8F489FBA7D1DFCE051E51BE3D9745F15"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_funnel_0005.png",
-      "size": 113995,
-      "mtime": "2026-01-29T18:24:32.0160978Z",
-      "checksum": "551060BEA51DCB17D84AA108FC9E689111743D921913A25C19A77C5E913C2EEE"
+      "path": "images/weapon/icon/wpn_lance_0010.png",
+      "size": 5894,
+      "mtime": "2026-01-27T18:22:25.1030899Z",
+      "checksum": "D0DA18B89BEA2273BF2E4AC70BFCFAC824B22DD631D2D36AF8339028E5BDFD1A"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_funnel_0012.png",
-      "size": 95214,
-      "mtime": "2026-01-29T18:24:31.8131171Z",
-      "checksum": "8CDDDAB394D9B74D0951BE5EC2B6848A1A0FD8638F1BADB614771A69BC226BA2"
+      "path": "images/weapon/icon/wpn_lance_0011.png",
+      "size": 6092,
+      "mtime": "2026-01-27T18:22:25.3936727Z",
+      "checksum": "6868C31CAEAF97B13600281D837AFC4A2C47DD2956FD29013FE00A61E244DBBF"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_funnel_0014.png",
-      "size": 91424,
-      "mtime": "2026-01-29T18:24:31.7460537Z",
-      "checksum": "1A7B44B7C8873CC712C21DBD3C9960F414B427A5B9A8293845D5525025FDBF1C"
+      "path": "images/weapon/icon/wpn_lance_0012.png",
+      "size": 6249,
+      "mtime": "2026-01-27T18:22:26.0002379Z",
+      "checksum": "3AC4FE34FD4E804D6E7F0D034224EE0B5829A8D0926404D665233FE4AE9357B4"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_lance_0003.png",
-      "size": 78800,
-      "mtime": "2026-01-29T18:24:33.4313332Z",
-      "checksum": "145BD7372778AEFC0539C187177291E922166724BA589E11A61422FE8DA06B65"
+      "path": "images/weapon/icon/wpn_lance_0013.png",
+      "size": 5428,
+      "mtime": "2026-01-27T18:22:26.6797599Z",
+      "checksum": "2A659DFF3782A89F48B66BB015A3C2570064D97CD3AF16D8E69CD4B28DAA404B"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_lance_0006.png",
-      "size": 122873,
-      "mtime": "2026-01-29T18:24:33.1673603Z",
-      "checksum": "B72588152AA61D4CE1C584FB3E90D154519BF30CC5976BF81A77416DF8611198"
+      "path": "images/weapon/icon/wpn_pistol_0001.png",
+      "size": 5114,
+      "mtime": "2026-01-27T18:22:27.6019102Z",
+      "checksum": "E927F7C9D3879731FCC647AB8BA0CB95C2A9FD67C680839077425DBB71C7A565"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_lance_0008.png",
-      "size": 86900,
-      "mtime": "2026-01-29T18:24:33.3722343Z",
-      "checksum": "E1AF7342680242CB56A10EC3CDBA52E6AB0269C5FB7D087D3DCC9D5DD25909BE"
+      "path": "images/weapon/icon/wpn_pistol_0002.png",
+      "size": 4915,
+      "mtime": "2026-01-27T18:22:27.2445198Z",
+      "checksum": "3D782A8BCB14390CE4961C3CC6312A5C50746511E474AB20716B64272F0E3CE2"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_lance_0013.png",
-      "size": 90915,
-      "mtime": "2026-01-29T18:24:33.2312215Z",
-      "checksum": "98E42E8C2DC03764CD432F663BCE6AE38FC8743F0AC66C1A5E47861741C32D07"
+      "path": "images/weapon/icon/wpn_pistol_0003.png",
+      "size": 5538,
+      "mtime": "2026-01-27T18:22:27.4104485Z",
+      "checksum": "893CEC390AE85E198B0C40219CCA25828500C1C2B4E6ADFA2A3CF352B287C785"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_pistol_0002.png",
-      "size": 80500,
-      "mtime": "2026-01-29T18:24:32.8202101Z",
-      "checksum": "C7FFF88CE68BB75F039E1F2B152087D683AA1DA4285682B7FA277D46C998219D"
+      "path": "images/weapon/icon/wpn_pistol_0004.png",
+      "size": 4911,
+      "mtime": "2026-01-27T18:22:26.5107004Z",
+      "checksum": "4361D76F4AC7227AD27DA3E853F6C469A8FAFFBEAB945CED785238C8017C7E0B"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_pistol_0003.png",
-      "size": 100243,
-      "mtime": "2026-01-29T18:24:32.7553113Z",
-      "checksum": "9324D0CB5F0BA77C322B4DF902C1855B1F306B7D7A453BBE2C67DF72E85B7EE0"
+      "path": "images/weapon/icon/wpn_pistol_0005.png",
+      "size": 5854,
+      "mtime": "2026-01-27T18:22:25.8287592Z",
+      "checksum": "704B6EA561B9820609B449A33AD1C358F2192601573FB7E75A5363BFD9CBBBBB"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_pistol_0008.png",
-      "size": 126186,
-      "mtime": "2026-01-29T18:24:32.3506632Z",
-      "checksum": "ACA349816D7DC3790787BBC31C24DF2C68BA604CF4E66F88B42C6B8A19E6357F"
+      "path": "images/weapon/icon/wpn_pistol_0006.png",
+      "size": 5223,
+      "mtime": "2026-01-27T18:22:26.0397097Z",
+      "checksum": "D2ED0B5E36C3589E0A6694FAD622EF6F4D2EFEE8B0E5FAAE1AEA72F3B0DB0DD9"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_pistol_0009.png",
-      "size": 97194,
-      "mtime": "2026-01-29T18:24:32.2852613Z",
-      "checksum": "E4EA50C7A1E9CE7BED027D8271319D14C108538140994B6BBF5A0F7C4913ED8A"
+      "path": "images/weapon/icon/wpn_pistol_0008.png",
+      "size": 6319,
+      "mtime": "2026-01-27T18:22:24.9050569Z",
+      "checksum": "1CBC00FEB866768BE1BDD9F2F7D3F56E1A5F4C624C4448A66119582A872FA51A"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0005.png",
-      "size": 101751,
-      "mtime": "2026-01-29T18:24:35.2549276Z",
-      "checksum": "5A09F171D15889B6F2345768C134134D691AD9F879D405CF9AE2408734D4B7CA"
+      "path": "images/weapon/icon/wpn_pistol_0009.png",
+      "size": 5305,
+      "mtime": "2026-01-27T18:22:25.1855355Z",
+      "checksum": "5562496C369DB4F2477481C667C75712A7014F6E6BDF65DE6B6F57A4E7D5CDDD"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0006.png",
-      "size": 103242,
-      "mtime": "2026-01-29T18:24:34.7595075Z",
-      "checksum": "418EB27BCD6899F557AF881546DDBF595F657D83F870B2D98EF194E86C6A27D3"
+      "path": "images/weapon/icon/wpn_pistol_0010.png",
+      "size": 5901,
+      "mtime": "2026-01-27T18:22:25.6910130Z",
+      "checksum": "A2514856B79A8D9FDCFFAF7A2E532D7829651E62B4FC4C2CE476D9225A1D0C1C"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0007.png",
-      "size": 98308,
-      "mtime": "2026-01-29T18:24:35.1903643Z",
-      "checksum": "A02C5D346753BC06417F2D759F0B6F6CAF0406A8B35B59CE5C7DE1ECFD8EAFD0"
+      "path": "images/weapon/icon/wpn_pistol_0012.png",
+      "size": 6159,
+      "mtime": "2026-01-27T18:22:26.2845864Z",
+      "checksum": "F79E46E3517970A5A185A248B6A9A7581FF98027AF34DA109ECE0E404ADE3A4A"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0008.png",
-      "size": 97787,
-      "mtime": "2026-01-29T18:24:35.3972036Z",
-      "checksum": "C65C7D9D870A5F9ABCAD1D4412D4DCFE9E11181D0857FC1D493D126B61BA51ED"
+      "path": "images/weapon/icon/wpn_sword_0003.png",
+      "size": 5126,
+      "mtime": "2026-01-27T18:22:27.5505943Z",
+      "checksum": "EA414B515FDE8822C49068CDADEF05C45E983669A655B9EB3702D875274445D3"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0009.png",
-      "size": 85501,
-      "mtime": "2026-01-29T18:24:35.3224814Z",
-      "checksum": "43AF6E6EC09CC046F748488436EA6F1EF2E66390921A4A007EE2856F240EB120"
+      "path": "images/weapon/icon/wpn_sword_0005.png",
+      "size": 5633,
+      "mtime": "2026-01-27T18:22:27.0227952Z",
+      "checksum": "F7C021C1876FFF7A8901E806E1FBA9D0248483A467E7DACB3D1282BD8D72C74C"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0018.png",
-      "size": 94456,
-      "mtime": "2026-01-29T18:24:35.0638371Z",
-      "checksum": "E4EF82CC603D1CA440F1C551DA769AC935F3C0054B63DE5BCBDFE1511211491A"
+      "path": "images/weapon/icon/wpn_sword_0006.png",
+      "size": 6213,
+      "mtime": "2026-01-27T18:22:25.4682911Z",
+      "checksum": "9FF9C160F9335BE4F03C942187AB5499FABC6E624DA81B956ABD1900E1DDA45C"
     },
     {
       "type": "image/png",
-      "role": "cover",
+      "role": "icon",
       "category": "weapon",
-      "path": "images/weapon/cover/wpn_sword_0020.png",
-      "size": 88333,
-      "mtime": "2026-01-29T18:24:35.1266596Z",
-      "checksum": "52554A31ADC41758BF15DC5FE78ED18B884378BAC4D305999EC669B94EC4AE92"
+      "path": "images/weapon/icon/wpn_sword_0007.png",
+      "size": 5588,
+      "mtime": "2026-01-27T18:22:26.2419200Z",
+      "checksum": "52F67FC37BB3458E54C312249670C8A259FD0A547D6A1DBC2863646B37F9D2BF"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0008.png",
+      "size": 5580,
+      "mtime": "2026-01-27T18:22:27.2032643Z",
+      "checksum": "EAD3341ECC7534F3781AE21CD335FA4CF702B0A37D1D14E01B0CF63DD74187A8"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0009.png",
+      "size": 5071,
+      "mtime": "2026-01-27T18:22:27.3758045Z",
+      "checksum": "B7112CC1A53BDB2EF03F1E01C9A1A759E77FB598137FFC32D16CC0F240E1C0D1"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0010.png",
+      "size": 6198,
+      "mtime": "2026-01-27T18:22:25.6057478Z",
+      "checksum": "BB9EAD58DC4D4CB468E8D79F423EFD9E90B7A19CB87C22F7200C2988F7125873"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0011.png",
+      "size": 5741,
+      "mtime": "2026-01-27T18:22:25.7800453Z",
+      "checksum": "05BFEA2A15B0AB52CE905B355A06928C9F504E31232772EB86D8A3A7D4139283"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0012.png",
+      "size": 6559,
+      "mtime": "2026-01-27T18:22:24.8574488Z",
+      "checksum": "3E62E8D8F62C0B2EE1F6C7EFA40550D13A7A6B46CE005DAD1E4F9EB85558B4D1"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0013.png",
+      "size": 6408,
+      "mtime": "2026-01-27T18:22:25.1457489Z",
+      "checksum": "0AE3E89F9E2A284EA1D6E9E21D796CB321AE97B23918D86E47714C55A998DAE0"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0014.png",
+      "size": 7658,
+      "mtime": "2026-01-27T18:22:25.4308460Z",
+      "checksum": "EEC713CBBB442BA3DF5A6F7B354B85DFBF07C43B9CF9B98031E951E5E43C125A"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0015.png",
+      "size": 5436,
+      "mtime": "2026-01-27T18:22:26.9330679Z",
+      "checksum": "5B1D919C6771CA08D730184752E7E8F600C21308C966CF4EBB7C2D028E6FD2D8"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0016.png",
+      "size": 4710,
+      "mtime": "2026-01-27T18:22:25.2346683Z",
+      "checksum": "20145947BCD2C31741FD47B9E26A8E1B188483F7F41E653D44F652A007845647"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0018.png",
+      "size": 5771,
+      "mtime": "2026-01-27T18:22:26.6453501Z",
+      "checksum": "4DC19A624FCF560634D9529C6EFC6DDD49CAA71C459A3877D681CC50A5E65852"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0019.png",
+      "size": 5589,
+      "mtime": "2026-01-27T18:22:26.8388740Z",
+      "checksum": "01FA85E45B3DC7F336CE9D510FD39D859CA304573F50509AA834D1C02710F42C"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0020.png",
+      "size": 5619,
+      "mtime": "2026-01-27T18:22:26.4141816Z",
+      "checksum": "DFB801B548214C6277FA14AE02115859C52497B99D840809D90E0C014E59E32C"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "weapon",
+      "path": "images/weapon/icon/wpn_sword_0021.png",
+      "size": 5548,
+      "mtime": "2026-01-27T18:22:25.0470357Z",
+      "checksum": "F6722F086E97F446D2261A16D5F868505177FED34F049080BD9BA0AAF1724460"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0016_laevat.png",
-      "size": 34550,
-      "mtime": "2026-01-29T18:01:47.2457253Z",
-      "checksum": "CC7828B5CF66CE01F23E89447F9DECED5222B2158CC22C2670B3E5CB4392EF74"
+      "path": "images/character/icon/chr_0002_endminm.png",
+      "size": 37427,
+      "mtime": "2026-02-05T19:19:30.0019232Z",
+      "checksum": "53C737501974C72703D07877843FD05C3312F2149546C2BFE846AF4C11A52298"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0025_ardelia.png",
-      "size": 34678,
-      "mtime": "2026-01-29T18:02:05.5668382Z",
-      "checksum": "FFF6A36D951DB79116388FD77774004D5C7B2E8F24AAF27613A6D15CC1A56AEB"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0026_lastrite.png",
-      "size": 36678,
-      "mtime": "2026-01-29T18:02:07.3222724Z",
-      "checksum": "6D4F4E43DBE53891658047439B3F202983354AC2A05C54DA4455F92F3E3DD394"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0009_azrila.png",
-      "size": 35676,
-      "mtime": "2026-01-29T18:01:36.4873417Z",
-      "checksum": "9F6F0175C858BC62FD70EE01A6D26CFE59354C4902CC55D141EBC1044DFBC285"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0029_pograni.png",
-      "size": 34436,
-      "mtime": "2026-01-29T18:02:09.1954665Z",
-      "checksum": "18C6B4B5F9139F3B2DC42B603352F51EF9BCD07FF4AA066FCAE143B5050354B3"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0024_deepfin.png",
-      "size": 35313,
-      "mtime": "2026-01-29T18:02:01.8136610Z",
-      "checksum": "4812D2C158DE9B7A573856166CA7BA1CAA9B00008339E31E0226666B0B835FEF"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0018_dapan.png",
-      "size": 29823,
-      "mtime": "2026-01-29T18:01:51.4272226Z",
-      "checksum": "D818DC184365B3A8347FEC2636653085D6057E6DD6B9E633226D686059F06E62"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0007_ikut.png",
-      "size": 33870,
-      "mtime": "2026-01-29T18:01:34.4959930Z",
-      "checksum": "3385DA430519716E8936AE26357CAF706D5FCA6A08BB393E6C3CB19D093FB6E8"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
-      "path": "images/character/icon/chr_0012_avywen.png",
-      "size": 36241,
-      "mtime": "2026-01-29T18:01:40.6733074Z",
-      "checksum": "FAA1D7DD70E99E67FB7DE0F0FC51498743D2EE4DE55BC4478907DABFFC5A5B1F"
+      "path": "images/character/icon/chr_0003_endminf.png",
+      "size": 36670,
+      "mtime": "2026-02-05T19:19:51.9781121Z",
+      "checksum": "0794EFE7A32A0DF6EA1B9C7C4DD7D1C683628AF9FA42AE26ACEB2B2C89BDA383"
     },
     {
       "type": "image/png",
@@ -530,15 +593,6 @@
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0014_aurora.png",
-      "size": 37866,
-      "mtime": "2026-01-29T18:01:42.7656969Z",
-      "checksum": "59225E6107835F39B8421087142F4285747326290927722C6F25F64EB52CEA7F"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
       "path": "images/character/icon/chr_0005_chen.png",
       "size": 33954,
       "mtime": "2026-01-29T18:01:30.1374654Z",
@@ -548,10 +602,109 @@
       "type": "image/png",
       "role": "icon",
       "category": "character",
+      "path": "images/character/icon/chr_0006_wolfgd.png",
+      "size": 37063,
+      "mtime": "2026-01-29T18:01:32.4763768Z",
+      "checksum": "FD4DCB6278CAD5F589BBF80B920F0293B5036B434E70C40E5FE4765DAC15B658"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0007_ikut.png",
+      "size": 33870,
+      "mtime": "2026-01-29T18:01:34.4959930Z",
+      "checksum": "3385DA430519716E8936AE26357CAF706D5FCA6A08BB393E6C3CB19D093FB6E8"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0009_azrila.png",
+      "size": 35676,
+      "mtime": "2026-01-29T18:01:36.4873417Z",
+      "checksum": "9F6F0175C858BC62FD70EE01A6D26CFE59354C4902CC55D141EBC1044DFBC285"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
       "path": "images/character/icon/chr_0011_seraph.png",
       "size": 38494,
       "mtime": "2026-01-29T18:01:38.3613309Z",
       "checksum": "ECDDA2174DA271BBD817C9BF71890D5E29886597D629ED6E7B107EECBD683375"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0012_avywen.png",
+      "size": 36241,
+      "mtime": "2026-01-29T18:01:40.6733074Z",
+      "checksum": "FAA1D7DD70E99E67FB7DE0F0FC51498743D2EE4DE55BC4478907DABFFC5A5B1F"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0013_aglina.png",
+      "size": 37246,
+      "mtime": "2026-01-27T17:23:16.9849356Z",
+      "checksum": "E4CA23B72E15B8761A5D63FDE1035AC68D56AC8BCEF363DB06CA69EF9E4F7702"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0014_aurora.png",
+      "size": 37866,
+      "mtime": "2026-01-29T18:01:42.7656969Z",
+      "checksum": "59225E6107835F39B8421087142F4285747326290927722C6F25F64EB52CEA7F"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0015_lifeng.png",
+      "size": 34356,
+      "mtime": "2026-01-29T18:01:45.0029410Z",
+      "checksum": "23186A83B806B16F0B36D3080C5F90939318F384133A221AA901FB2275F406BA"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0016_laevat.png",
+      "size": 34550,
+      "mtime": "2026-01-29T18:01:47.2457253Z",
+      "checksum": "CC7828B5CF66CE01F23E89447F9DECED5222B2158CC22C2670B3E5CB4392EF74"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0017_yvonne.png",
+      "size": 36679,
+      "mtime": "2026-01-29T18:19:27.4040136Z",
+      "checksum": "95F24E163E04E46BC05D6D969D72FBDA80B2FF44BC6CDA991CFF537626BD2695"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0018_dapan.png",
+      "size": 29823,
+      "mtime": "2026-01-29T18:01:51.4272226Z",
+      "checksum": "D818DC184365B3A8347FEC2636653085D6057E6DD6B9E633226D686059F06E62"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0019_karin.png",
+      "size": 34694,
+      "mtime": "2026-01-29T18:01:53.4817173Z",
+      "checksum": "9C06F30A37255F78544B1EF8F31581A0E6BE86A25E5E0A0004868AB997759669"
     },
     {
       "type": "image/png",
@@ -584,15 +737,6 @@
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0019_karin.png",
-      "size": 34694,
-      "mtime": "2026-01-29T18:01:53.4817173Z",
-      "checksum": "9C06F30A37255F78544B1EF8F31581A0E6BE86A25E5E0A0004868AB997759669"
-    },
-    {
-      "type": "image/png",
-      "role": "icon",
-      "category": "character",
       "path": "images/character/icon/chr_0023_antal.png",
       "size": 32776,
       "mtime": "2026-01-29T18:02:03.6011875Z",
@@ -602,19 +746,55 @@
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0015_lifeng.png",
-      "size": 34356,
-      "mtime": "2026-01-29T18:01:45.0029410Z",
-      "checksum": "23186A83B806B16F0B36D3080C5F90939318F384133A221AA901FB2275F406BA"
+      "path": "images/character/icon/chr_0024_deepfin.png",
+      "size": 35313,
+      "mtime": "2026-01-29T18:02:01.8136610Z",
+      "checksum": "4812D2C158DE9B7A573856166CA7BA1CAA9B00008339E31E0226666B0B835FEF"
     },
     {
       "type": "image/png",
       "role": "icon",
       "category": "character",
-      "path": "images/character/icon/chr_0006_wolfgd.png",
-      "size": 37063,
-      "mtime": "2026-01-29T18:01:32.4763768Z",
-      "checksum": "FD4DCB6278CAD5F589BBF80B920F0293B5036B434E70C40E5FE4765DAC15B658"
+      "path": "images/character/icon/chr_0025_ardelia.png",
+      "size": 34678,
+      "mtime": "2026-01-29T18:02:05.5668382Z",
+      "checksum": "FFF6A36D951DB79116388FD77774004D5C7B2E8F24AAF27613A6D15CC1A56AEB"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0026_lastrite.png",
+      "size": 36678,
+      "mtime": "2026-01-29T18:02:07.3222724Z",
+      "checksum": "6D4F4E43DBE53891658047439B3F202983354AC2A05C54DA4455F92F3E3DD394"
+    },
+    {
+      "type": "image/png",
+      "role": "icon",
+      "category": "character",
+      "path": "images/character/icon/chr_0029_pograni.png",
+      "size": 34436,
+      "mtime": "2026-01-29T18:02:09.1954665Z",
+      "checksum": "18C6B4B5F9139F3B2DC42B603352F51EF9BCD07FF4AA066FCAE143B5050354B3"
+    },
+    {
+      "type": "image/png",
+      "role": "cover",
+      "category": "character",
+      "path": "images/character/cover/chr_0002_endminm.png",
+      "size": 500704,
+      "mtime": "2026-01-29T17:47:58.9748603Z",
+      "checksum": "57F0B3FD1BF6EA072AE6A39E29265AB494E83CED1E4B209B48589C2377B74EC0"
+    },
+    {
+      "type": "image/png",
+      "role": "cover",
+      "category": "character",
+      "path": "images/character/cover/chr_0003_endminf.png",
+      "size": 471838,
+      "mtime": "2026-01-29T17:47:58.8080865Z",
+      "checksum": "2DBE86AB5065204BF4B4C95F9872ED732BDDCA7CFD0A229D21D5AB7EF5636728"
     },
     {
       "type": "image/png",
@@ -683,6 +863,15 @@
       "type": "image/png",
       "role": "cover",
       "category": "character",
+      "path": "images/character/cover/chr_0013_aglina.png",
+      "size": 632831,
+      "mtime": "2026-01-29T17:47:58.5799708Z",
+      "checksum": "3C06C523E61A2557A5F0C4A2FED130D410B9B823BD73C380BC3FC9A1CE4B1EEC"
+    },
+    {
+      "type": "image/png",
+      "role": "cover",
+      "category": "character",
       "path": "images/character/cover/chr_0014_aurora.png",
       "size": 530998,
       "mtime": "2026-01-29T17:48:00.6594367Z",
@@ -705,6 +894,15 @@
       "size": 561863,
       "mtime": "2026-01-29T17:47:58.4442167Z",
       "checksum": "6A5B0F676EA96A12059A6BEA72C7B0006AD53256DF3471632B6467F459342AFB"
+    },
+    {
+      "type": "image/png",
+      "role": "cover",
+      "category": "character",
+      "path": "images/character/cover/chr_0017_yvonne.png",
+      "size": 631840,
+      "mtime": "2026-01-29T17:47:58.7101220Z",
+      "checksum": "CC4BC745E51519DF54BBA448ACEADA22D1728DC65E79F3A67E3174074A7F2228"
     },
     {
       "type": "image/png",
@@ -801,18 +999,9 @@
       "role": "localization",
       "category": "character",
       "path": "locale/zh-CN/character.json",
-      "size": 2255,
-      "mtime": "2026-01-28T19:33:25.0916406Z",
-      "checksum": "1A3298B72AF15DDA9ED27F1ACFC39953CA5A754DC96FB48A796722851A3759D2"
-    },
-    {
-      "type": "application/json",
-      "role": "localization",
-      "category": "weapon",
-      "path": "locale/zh-CN/weapon.json",
-      "size": 2705,
-      "mtime": "2026-01-28T19:33:25.0956758Z",
-      "checksum": "BCA15E95F20CBF84846763B1E05DA0F3C26E85A004C28CD98FA648821424511A"
+      "size": 2721,
+      "mtime": "2026-02-05T19:23:09.8411360Z",
+      "checksum": "66ADD6C7EC2D3779A92CAB33FEE9C34FA308A70F7860EF3834153D1144D55B2E"
     },
     {
       "type": "application/json",
@@ -822,6 +1011,33 @@
       "size": 1053,
       "mtime": "2026-01-30T09:16:43.6207414Z",
       "checksum": "EACBF9E46F3638B1BF51F88539F0DC13BB9977F57A2369D100B6389ED6057F3C"
+    },
+    {
+      "type": "application/json",
+      "role": "localization",
+      "category": "weapon",
+      "path": "locale/zh-CN/weapon.json",
+      "size": 4275,
+      "mtime": "2026-02-05T19:41:09.9208589Z",
+      "checksum": "01CC68B13BAC91D0AD2A9960D764B806EA91524196701777BE6F4D64C28CA7F2"
+    },
+    {
+      "type": "application/json",
+      "role": "localization",
+      "category": "character",
+      "path": "locale/en-US/character.json",
+      "size": 3207,
+      "mtime": "2026-02-05T19:34:51.2318022Z",
+      "checksum": "C08643BE5C937A8209534EE40E836E2B3957FD85BBF82099840C1D833F28FEA8"
+    },
+    {
+      "type": "application/json",
+      "role": "localization",
+      "category": "weapon",
+      "path": "locale/en-US/weapon.json",
+      "size": 4385,
+      "mtime": "2026-02-05T19:42:54.3966836Z",
+      "checksum": "177DB364C2F499E38DB2AEE3B55A716F298B6235239D862CD0B8ACE6412C46C0"
     }
   ]
 }

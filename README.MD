@@ -4,16 +4,16 @@
 
 ## 目录结构
 
-- `locale/zh-CN/character.json`：角色元数据列表（JSON 数组）
-- `locale/zh-CN/gacha_pool.json`：卡池本地化数据（JSON 数组）
-- `locale/zh-CN/weapon.json`：武器元数据列表（JSON 数组）
+- `locale/{lang}/character.json`：角色元数据列表（JSON 数组）
+- `locale/{lang}/gacha_pool.json`：卡池本地化数据（JSON 数组）
+- `locale/{lang}/weapon.json`：武器元数据列表（JSON 数组）
 - `images/character/icon/`：角色缩略图（`chr_*.png`）
 - `images/weapon/icon/`：武器缩略图（`wpn_*.png`）
 
 ## 元数据文件
 
-- `locale/zh-CN/character.json`：角色数组
-- `locale/zh-CN/weapon.json`：武器数组
+- `locale/{lang}/character.json`：角色数组
+- `locale/{lang}/weapon.json`：武器数组
 
 单条示例（存于对应数组）：
 

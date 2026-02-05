@@ -1,0 +1,40 @@
+[
+    {
+        "poolId": "stander",
+        "poolName": "Basic Headhunting",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Standard",
+        "start_time": 1769050800,
+        "end_time": null
+    },
+    {
+        "poolId": "beginner",
+        "poolName": "New Horizons",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Beginner",
+        "start_time": 1769050800,
+        "end_time": null
+    },
+    {
+        "poolId": "special_1_0_1",
+        "poolName": "Scars of the Forge",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Special",
+        "start_time": 1769050800,
+        "end_time": 1770436800,
+        "up": [
+            "chr_0016_laevat"
+        ]
+    },
+    {
+        "poolId": "weponbox_1_0_1",
+        "poolName": "Smelting Forge Issue",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": 1769050800,
+        "end_time": null,
+        "up": [
+            "wpn_sword_0006"
+        ]
+    }
+]
