@@ -1,8 +1,8 @@
 {
-  "package_version": "20260205195239",
-  "generated_at": "2026-02-05T19:52:39.7680821Z",
-  "metadata_checksum": "EE3A1D0818A41AC15135748093C6D89397C9A64CE33B176388A4FEC48E977D35",
-  "item_count": 115,
+  "package_version": "20260205204410",
+  "generated_at": "2026-02-05T20:44:10.0824363Z",
+  "metadata_checksum": "BA80794A2A10E73549391B63F039110F0E91A3A4684F1F706C355F23233FFF3F",
+  "item_count": 116,
   "entries": [
     {
       "type": "image/png",
@@ -1029,6 +1029,15 @@
       "size": 3207,
       "mtime": "2026-02-05T19:34:51.2318022Z",
       "checksum": "C08643BE5C937A8209534EE40E836E2B3957FD85BBF82099840C1D833F28FEA8"
+    },
+    {
+      "type": "application/json",
+      "role": "localization",
+      "category": "gacha_pool",
+      "path": "locale/en-US/gacha_pool.json",
+      "size": 1072,
+      "mtime": "2026-02-05T19:48:48.1771558Z",
+      "checksum": "37BB8AF90F1EBB0DF35EAE02C962A34777F92A13566C260DE2F564EAF3F81F6E"
     },
     {
       "type": "application/json",
