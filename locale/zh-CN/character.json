@@ -142,5 +142,11 @@
     "itemid": "chr_0002_endminm",
     "name": "管理员(女)",
     "rarity": 6
+  },
+  {
+    "type": "character",
+    "itemid": "chr_0027_tangtang",
+    "name": "汤汤",
+    "rarity": 6
   }
 ]

@@ -226,5 +226,167 @@
     "itemid": "wpn_sword_0009",
     "name": "Wave Tide",
     "rarity": 4
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0004",
+    "name": "Exemplar",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0007",
+    "name": "Thunderberge",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0008",
+    "name": "Sundered Prince",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0010",
+    "name": "Darhoff 7",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0013",
+    "name": "Khravengger",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0002",
+    "name": "Jiminy 12",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0006",
+    "name": "Opus: Etch Figure",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0008",
+    "name": "Detonation Unit",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0009",
+    "name": "Oblivion",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0011",
+    "name": "Delivery Guaranteed",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0013",
+    "name": "Dreams of the Starry Beach",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0009",
+    "name": "Opero 77",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0011",
+    "name": "JET",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0012",
+    "name": "Mountain Bearer",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0001",
+    "name": "Peco 5",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0005",
+    "name": "Navigator",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0007",
+    "name": "Home Longing",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0010",
+    "name": "Artzy Tyrannical",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0011",
+    "name": "Brigand's Calling",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0003",
+    "name": "Tarr 11",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0010",
+    "name": "Umbral Torch",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0011",
+    "name": "Rapid Ascent",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0012",
+    "name": "Thermite Cutter",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0013",
+    "name": "Eminent Repute",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0016",
+    "name": "Never Rest",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0017",
+    "name": "Glorious Memory",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0021",
+    "name": "Grand Vision",
+    "rarity": 6
   }
 ]

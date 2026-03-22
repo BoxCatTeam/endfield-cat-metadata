@@ -36,5 +36,126 @@
         "up": [
             "wpn_sword_0006"
         ]
+    },
+    {
+        "poolId": "special_1_0_2",
+        "poolName": "Hues of Passion",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Special",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "chr_0017_yvonne"
+        ]
+    },
+    {
+        "poolId": "special_1_0_3",
+        "poolName": "The Floaty Messenger",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Special",
+        "start_time": 1770436800,
+        "end_time": 1771905600,
+        "up": [
+            "chr_0013_aglina"
+        ]
+    },
+    {
+        "poolId": "special_1_1_1",
+        "poolName": "River's Daughter",
+        "version": 1.1,
+        "gacha_type": "E_CharacterGachaPoolType_Special",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "chr_0027_tangtang"
+        ]
+    },
+    {
+        "poolId": "weaponbox_constant_1",
+        "poolName": "Solid Ice Issue",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_claym_0013"
+        ]
+    },
+    {
+        "poolId": "weaponbox_constant_2",
+        "poolName": "Cosmic Voice Issue",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_funnel_0013"
+        ]
+    },
+    {
+        "poolId": "weaponbox_constant_3",
+        "poolName": "Far Expedition Issue",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_sword_0016"
+        ]
+    },
+    {
+        "poolId": "weaponbox_constant_4",
+        "poolName": "Rising Mount Issue",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_lance_0012"
+        ]
+    },
+    {
+        "poolId": "weaponbox_constant_5",
+        "poolName": "Thunderous Peal Issue",
+        "version": null,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_claym_0007"
+        ]
+    },
+    {
+        "poolId": "weponbox_1_0_2",
+        "poolName": "Graffiti Issue",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_pistol_0010"
+        ]
+    },
+    {
+        "poolId": "weponbox_1_0_3",
+        "poolName": "Express Delivery Issue",
+        "version": 1.0,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_funnel_0011"
+        ]
+    },
+    {
+        "poolId": "weponbox_1_1_1",
+        "poolName": "Budding Anew Issue",
+        "version": 1.1,
+        "gacha_type": "E_CharacterGachaPoolType_Weapon",
+        "start_time": null,
+        "end_time": null,
+        "up": [
+            "wpn_pistol_0011"
+        ]
     }
 ]

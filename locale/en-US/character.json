@@ -142,5 +142,11 @@
         "itemid": "chr_0002_endminm",
         "name": "Endministrator(Male)",
         "rarity": 6
+    },
+    {
+        "type": "character",
+        "itemid": "chr_0027_tangtang",
+        "name": "Tangtang",
+        "rarity": 6
     }
 ]

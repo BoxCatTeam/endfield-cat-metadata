@@ -78,61 +78,63 @@ $extra
 
 ## manifest.json
 
-- `manifest.json` 由元数据生成，包含每条资源的 `type`（MIME，如 `image/png`）、`role`（用途，如 `icon`/`localization`）、`category`（如 `character`/`weapon`）、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
-- 元数据文件（`locale/zh-CN/character.json`、`locale/zh-CN/weapon.json`、`locale/zh-CN/gacha_pool.json`）作为 `role=localization` 的记录加入 `entries`。
+- `manifest.json` 由仓库中的资源文件生成，包含每条资源的 `type`（MIME，如 `image/png` / `application/json`）、`role`（用途，如 `icon` / `cover` / `localization`）、`category`（如 `character` / `weapon` / `gacha_pool`）、`path`、`checksum`、`size`、`mtime`，以及整体 `metadata_checksum`、`package_version`。
+- 当前 `entries` 会收录以下资源：
+  - `images/character/icon/*.png`
+  - `images/character/cover/*.png`
+  - `images/weapon/icon/*.png`
+  - `images/weapon/cover/*.png`
+  - `locale/*/*.json`
 - 生成命令（PowerShell）：
 
 ```powershell
-$char   = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\character.json | ConvertFrom-Json
-$gacha  = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\gacha_pool.json | ConvertFrom-Json
-$weapon = Get-Content -Raw -Encoding UTF8 .\locale\zh-CN\weapon.json   | ConvertFrom-Json
+function New-ManifestEntry {
+  param(
+    [Parameter(Mandatory = $true)][string]$Path,
+    [Parameter(Mandatory = $true)][string]$Role,
+    [Parameter(Mandatory = $true)][string]$Category,
+    [Parameter(Mandatory = $true)][string]$Type
+  )
+
+  $file = Get-Item -LiteralPath $Path
+  [pscustomobject]@{
+    type     = $Type
+    role     = $Role
+    category = $Category
+    path     = $Path.Replace('\', '/')
+    size     = $file.Length
+    mtime    = $file.LastWriteTimeUtc.ToString('o')
+    checksum = (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash
+  }
+}
 
 $entries = @()
-foreach($i in $weapon){
-  $path = "images/weapon/icon/$($i.itemid).png"
-  $file = Get-Item $path
-  $entries += [pscustomobject]@{
-    type     = 'image/png'
-    role     = 'icon'
-    category = 'weapon'
-    path     = $path
-    size     = $file.Length
-    mtime    = $file.LastWriteTimeUtc.ToString('o')
-    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
-  }
-}
-foreach($i in $char){
-  $path = "images/character/icon/$($i.itemid).png"
-  $file = Get-Item $path
-  $entries += [pscustomobject]@{
-    type     = 'image/png'
-    role     = 'icon'
-    category = 'character'
-    path     = $path
-    size     = $file.Length
-    mtime    = $file.LastWriteTimeUtc.ToString('o')
-    checksum = (Get-FileHash $path -Algorithm SHA256).Hash
-  }
-}
-$metaPaths = @(
-  @{ path = 'locale/zh-CN/character.json'; category = 'character' },
-  @{ path = 'locale/zh-CN/gacha_pool.json'; category = 'gacha_pool' },
-  @{ path = 'locale/zh-CN/weapon.json'    ; category = 'weapon'    }
+
+$imageDirs = @(
+  @{ path = 'images/character/icon' ; role = 'icon'  ; category = 'character' },
+  @{ path = 'images/character/cover'; role = 'cover' ; category = 'character' },
+  @{ path = 'images/weapon/icon'    ; role = 'icon'  ; category = 'weapon'    },
+  @{ path = 'images/weapon/cover'   ; role = 'cover' ; category = 'weapon'    }
 )
-foreach($m in $metaPaths){
-  $file = Get-Item $m.path
-  $entries += [pscustomobject]@{
-    type     = 'application/json'
-    role     = 'localization'
-    category = $m.category
-    path     = $m.path.Replace('\','/')
-    size     = $file.Length
-    mtime    = $file.LastWriteTimeUtc.ToString('o')
-    checksum = (Get-FileHash $m.path -Algorithm SHA256).Hash
-  }
+
+foreach($dir in $imageDirs){
+  Get-ChildItem -File $dir.path -Filter '*.png' |
+    Sort-Object Name |
+    ForEach-Object {
+      $relativePath = $_.FullName.Substring($PWD.Path.Length + 1)
+      $entries += New-ManifestEntry -Path $relativePath -Role $dir.role -Category $dir.category -Type 'image/png'
+    }
 }
-$metaRaw = Get-Content -Raw -Encoding UTF8 -Path ($metaPaths.path)
-$metaHash = [BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash([Text.Encoding]::UTF8.GetBytes($metaRaw))).Replace('-','')
+
+$metaFiles = Get-ChildItem -File .\locale -Recurse -Filter '*.json' | Sort-Object FullName
+foreach($file in $metaFiles){
+  $relativePath = $file.FullName.Substring($PWD.Path.Length + 1)
+  $category = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
+  $entries += New-ManifestEntry -Path $relativePath -Role 'localization' -Category $category -Type 'application/json'
+}
+
+$metaRaw = ($metaFiles | ForEach-Object { Get-Content -Raw -Encoding UTF8 -LiteralPath $_.FullName }) -join ''
+$metaHash = [BitConverter]::ToString([Security.Cryptography.SHA256]::Create().ComputeHash([Text.Encoding]::UTF8.GetBytes($metaRaw))).Replace('-', '')
 
 $manifest = [pscustomobject]@{
   package_version   = [DateTime]::UtcNow.ToString('yyyyMMddHHmmss')

@@ -226,5 +226,167 @@
     "itemid": "wpn_sword_0009",
     "name": "浪潮",
     "rarity": 4
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0004",
+    "name": "典范",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0007",
+    "name": "大雷斑",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0008",
+    "name": "破碎君王",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0010",
+    "name": "达尔霍夫7",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_claym_0013",
+    "name": "赫拉芬格",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0002",
+    "name": "吉米尼12",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0006",
+    "name": "作品：蚀迹",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0008",
+    "name": "爆破单元",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0009",
+    "name": "遗忘",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0011",
+    "name": "使命必达",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_funnel_0013",
+    "name": "沧溟星梦",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0009",
+    "name": "奥佩罗77",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0011",
+    "name": "J.E.T.",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_lance_0012",
+    "name": "负山",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0001",
+    "name": "佩科5",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0005",
+    "name": "领航者",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0007",
+    "name": "望乡",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0010",
+    "name": "艺术暴君",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_pistol_0011",
+    "name": "落草",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0003",
+    "name": "塔尔11",
+    "rarity": 3
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0010",
+    "name": "黯色火炬",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0011",
+    "name": "扶摇",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0012",
+    "name": "热熔切割器",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0013",
+    "name": "显赫声名",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0016",
+    "name": "不知归",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0017",
+    "name": "光荣记忆",
+    "rarity": 6
+  },
+  {
+    "type": "weapon",
+    "itemid": "wpn_sword_0021",
+    "name": "宏愿",
+    "rarity": 6
   }
 ]
